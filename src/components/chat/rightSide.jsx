@@ -16,7 +16,7 @@ const RightSide = () => {
         </div>
       </div>
       <div className="mt-5 rounded-lg border-[1px] border-[#aaaaaa2b]  pb-5 pl-5">
-        <div className="messages-scroll relative mt-8 flex h-[610px] w-full  flex-col overflow-y-scroll">
+        <div className="messages-scroll relative mt-8 flex h-[640px] w-full  flex-col overflow-y-scroll">
           <div className="m-auto mb-12 w-fit rounded-3xl bg-[#F4F4F4] px-4 py-1 text-sm font-medium">
             <p>Wednesday, July 25th</p>
           </div>
@@ -28,10 +28,10 @@ const RightSide = () => {
             placeholder="Message Noah Martinez"
             className="w-full rounded-lg  bg-[#F4F4F4] py-4 pl-3 pr-31 text-sm outline-none"
           />
-          <div className="absolute top-[13px] right-[100px] rounded-full bg-white p-[6px]">
+          <div className="absolute top-[13px] right-[110px] rounded-full bg-white p-[6px]">
             <BiPlus className="text-black" />
           </div>
-          <button className="absolute top-[10px] right-[32px] rounded-md bg-black px-3 py-1 text-white">
+          <button className="absolute top-[10px] right-[33px] rounded-md bg-black px-3 py-1 text-white">
             Send
           </button>
         </div>

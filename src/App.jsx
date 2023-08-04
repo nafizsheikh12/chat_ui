@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import "./main.css";
 import Chat from "./pages/chat";
 
 const App = () => {

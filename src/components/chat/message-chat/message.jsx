@@ -10,7 +10,7 @@ const message = ({ justify, text }) => {
         )}
         <div>
           <p
-            className={`inline-block rounded-lg rounded-bl-none px-4 py-2 font-medium ${
+            className={`inline-block rounded-xl rounded-bl-none px-4 py-2 font-medium ${
               justify === "end"
                 ? "bg-[#F5EED9] text-black"
                 : "bg-[#E8DAF4] text-black"

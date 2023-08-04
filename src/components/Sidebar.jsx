@@ -59,9 +59,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       }`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
-      <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-        <NavLink to="/">
-          <img src={Logo} alt="Logo" />
+      <div className="flex items-center justify-end gap-2 px-6 py-5.5 lg:py-6.5">
+        <NavLink to="/" className={`hidden`}>
+          <img src={Logo} alt="Logo" className="hidden" />
         </NavLink>
 
         <button
@@ -71,7 +71,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
           aria-expanded={sidebarOpen}
           className=" "
         >
-          <BsReverseLayoutSidebarReverse className="text-lg text-black" />
+          <BsReverseLayoutSidebarReverse className="text-[21px] text-black" />
         </button>
       </div>
       {/* <!-- SIDEBAR HEADER --> */}
@@ -81,9 +81,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         <nav className="py-4  px-3  lg:px-3">
           {/* <!-- Menu Group --> */}
           <div>
-            <h3 className="mb-1 ml-4 text-sm font-semibold text-black">
-              Main Menu
-            </h3>
+            <h3 className="mb-2 text-sm font-semibold text-black">Main Menu</h3>
 
             <ul className="mb-6 mt-1 flex flex-col gap-1.5">
               {/* <!-- Menu Item Calendar --> */}
