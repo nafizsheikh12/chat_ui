@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./main.css";
+import Signin from "./pages/Authentication/signin";
 import Chat from "./pages/chat";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <>
         <Routes>
           <Route exact path="/" element={<Chat />} />
+          <Route exact path="/sign" element={<Signin />} />
         </Routes>
       </>
     )
