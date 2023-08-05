@@ -3,7 +3,6 @@ import { AiOutlineHome, AiOutlineProfile } from "react-icons/ai";
 import {
   BsCoin,
   BsFolder2,
-  BsMoon,
   BsReverseLayoutSidebarReverse,
   BsWhatsapp,
 } from "react-icons/bs";
@@ -14,7 +13,6 @@ import { RiInstagramLine } from "react-icons/ri";
 import { SiGooglechrome } from "react-icons/si";
 import { NavLink, useLocation } from "react-router-dom";
 import img from "../assets/image/Michael_Corleone_Part_I.jpg";
-import Logo from "../images/logo/logo.svg";
 import SidebarLinkGroup from "./SidebarLinkGroup";
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
@@ -72,9 +70,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       }`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
-      <div className="flex items-center justify-end gap-2 px-6 py-5.5 lg:py-6.5">
-        <NavLink to="/" className={`hidden`}>
-          <img src={Logo} alt="Logo" className="hidden" />
+      <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
+        <NavLink to="/" className={``}>
+          <h1 className="text-2xl font-medium text-black">Chat Ui</h1>
         </NavLink>
 
         <button
@@ -346,7 +344,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               <p>Administor</p>
             </div>
             <div>
-              <BsMoon className="text-[22px] text-black" />
+              {
+                // <BsMoon className="text-[22px] text-black" />
+              }
             </div>
           </div>
         </div>
