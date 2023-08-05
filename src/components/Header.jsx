@@ -4,6 +4,7 @@ import { FiSearch } from "react-icons/fi";
 import { GrNotification } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import LogoIcon from "../images/logo/logo-icon.svg";
+import DropdownUser from "./DropdownUser";
 
 const Header = (props) => {
   return (
@@ -78,6 +79,7 @@ const Header = (props) => {
             <GrNotification className="text-[19px]" />
             <div className="absolute top-[-1px] right-[-4px] h-1 w-1 rounded-full bg-danger"></div>
           </div>
+          <DropdownUser />
         </div>
       </div>
     </header>

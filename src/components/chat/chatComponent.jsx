@@ -3,7 +3,7 @@ import LeftSide from "./LeftSide";
 import RightSide from "./rightSide";
 
 const chatComponent = () => {
-  const [openConversation, setopenConversation] = useState("");
+  const [openConversation, setopenConversation] = useState(false);
   return (
     <div>
       <div className="grid grid-cols-12 gap-5 bg-white">
